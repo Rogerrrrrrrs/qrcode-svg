@@ -51,6 +51,10 @@ for (var i = 0; i < args.length; i++) {
       config.ecl = args[++i];
       break;
       
+    case "--bom":
+      config.bom = true;
+      break;
+      
     case "--join":
       config.join = true;
       break;
@@ -113,6 +117,7 @@ function help() {
   console.log("  --color, -fg [color]   Foreground color, hex or name");
   console.log("  --background [color]   Background color, hex or name");
   console.log("  --ecl [value]          Error correction level: L, M, H, Q");
+  console.log("  --bom                  UTF-8 with BOM");
   console.log("  --join                 Join modules into one SVG path, i.e. for crisp rendering");
   console.log("  --predefined           Use 'defs' and 'use' elements in SVG, i.e. for compact output");
   console.log("  --no-prettify          Avoid indenting and new lines in SVG, i.e. for compact output");
