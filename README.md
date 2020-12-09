@@ -10,7 +10,7 @@ This library has been written to generate a SVG image of QR Code in Node.js, goa
 
 Install the package:
 ```bash
-npm install qrcode-svg
+npm install @rogerrrrrrrs/qrcode-svg
 ```
 
 Inline example:
