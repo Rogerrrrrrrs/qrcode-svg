@@ -47,6 +47,7 @@ qrcode.save("sample.svg", function(error) {
 * **background** - color of background, color name or hex string, e.g. `white`
 * **ecl** - error correction level: `L`, `M`, `H`, `Q`
 * **join** - join modules (squares) into one shape, into the SVG `path` element, **recommended** for web and responsive use, default: `false`
+* **bom** - UTF-8 with BOM
 * **predefined** - to create a squares as pattern, then populate the canvas, default: `false`, see the output examples below
 * **pretty** - apply indents and new lines, default: `true`
 * **swap** - swap X and Y modules, only if you have issues with some QR readers, default: `false`
@@ -156,6 +157,7 @@ Options:
   --background [color]   Background color, hex or name
   --ecl [value]          Error correction level: L, M, H, Q
   --join                 Join modules into one SVG path, i.e. for crisp rendering
+  --bom                  UTF-8 with BOM
   --predefined           Use 'defs' and 'use' elements in SVG, i.e. for compact output
   --no-prettify          Avoid indenting and new lines in SVG, i.e. for compact output
   --viewbox              Use 'viewBox' instead of 'width' and 'height' attributes
